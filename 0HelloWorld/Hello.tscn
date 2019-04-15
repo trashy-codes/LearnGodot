@@ -1,6 +1,9 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://Hello.gd" type="Script" id=1]
+
+[node name="Node2D" type="Panel"]
+script = ExtResource( 1 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 8.21051
@@ -8,4 +11,11 @@ margin_top = 10.0
 margin_right = 84.2105
 margin_bottom = 24.0
 text = "Hello World"
+
+[node name="Button" type="Button" parent="."]
+margin_left = 27.1579
+margin_top = 67.6316
+margin_right = 290.158
+margin_bottom = 100.632
+text = "Press Me"
 
