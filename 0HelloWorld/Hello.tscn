@@ -5,17 +5,21 @@
 [node name="Node2D" type="Panel"]
 script = ExtResource( 1 )
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." groups=[
+"1",
+]]
 margin_left = 8.21051
 margin_top = 10.0
 margin_right = 84.2105
 margin_bottom = 24.0
 text = "Hello World"
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." groups=[
+"1",
+]]
 margin_left = 27.1579
 margin_top = 67.6316
 margin_right = 290.158
 margin_bottom = 100.632
-text = "Press Me"
+text = "Press Me啊啊"
 
