@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="0HelloWorld"
-run/main_scene="res://Hello.tscn"
+run/main_scene="res://timer.tscn"
 config/icon="res://icon.png"
 
 [locale]
