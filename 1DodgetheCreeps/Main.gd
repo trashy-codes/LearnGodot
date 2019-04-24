@@ -7,16 +7,19 @@ func _ready():
     randomize()
 
 func game_over():
-    $ScoreTimer.stop()
-    $MobTimer.stop()
-    $HUD.show_game_over()
+	$ScoreTimer.stop()
+	$MobTimer.stop()
+	$HUD.show_game_over()
+	$Music.stop()
+	$DeathSound.play()
 
 func new_game():
-    score = 0
-    $Player.start($StartPosition.position)
-    $StartTimer.start()
-    $HUD.update_score(score)
-    $HUD.show_message("Get Ready")
+	score = 0
+	$Player.start($StartPosition.position)
+	$StartTimer.start()
+	$HUD.update_score(score)
+	$HUD.show_message("Get Ready")
+	$Music.play()
 
 func _on_StartTimer_timeout():
     $MobTimer.start()
